@@ -76,15 +76,15 @@ input, #comentarios
 
 #wrapper
 {
-	width: 300px;
-	margin: auto;
+	width: 500px;
+	margin: 100px auto;
 }
 
 .icon
 {
-	height: 50px;
-	width: 50px;
-	margin: 100px 20px;
+	height: 100px;
+	width: 100px;
+	margin: 100px 0 0 80px;
 }
 
 #cuadro
