@@ -6,7 +6,7 @@ $(document).ready(function()
 
 		$('#cuadro').click(function()
 		{
-			$('#cuadro').animo( { animation: 'tada' } );
+			$(this).animo( { animation: 'tada' } );
 			console.log("animacion aplicada a icon");
 		});
 });

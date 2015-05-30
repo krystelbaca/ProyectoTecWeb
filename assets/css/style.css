@@ -76,25 +76,15 @@ input, #comentarios
 
 #wrapper
 {
-	width: 300xpx;
+	width: 300px;
 	margin: auto;
 }
 
 .icon
 {
-	height: 80px;
-	width: 80px;
-	margin: 100px 	10px
-}
-
-#instagram
-{
-	background-image: url("../img/icons/instagram.png");
-}
-
-#facebook
-{
-	background-image: url("../img/icons/facebook.png");
+	height: 50px;
+	width: 50px;
+	margin: 100px 20px;
 }
 
 #cuadro
