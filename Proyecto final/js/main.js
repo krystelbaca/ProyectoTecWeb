@@ -1,7 +1,5 @@
 $(document).ready(function()
-{
-	$("#networks").click(function()
-	{
+{	
 		$.ajax(
 		{
 			url: "../dir/networks.html", 

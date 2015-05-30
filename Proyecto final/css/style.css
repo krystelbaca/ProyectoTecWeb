@@ -2,6 +2,7 @@ html, body
 {
 	height: 100%;
 	font-family: ubuntu;
+	font-variant: small-caps;
 }
 
 nav
@@ -21,7 +22,6 @@ nav li a
 {
 	text-decoration: none;
 	color: black;
-	font-variant: small-caps;
 }
 
 .cuadro
@@ -31,6 +31,13 @@ nav li a
 	height: 200px;
 }
 
+.inContacto
+{
+	height: 30px;
+	width: 286px;
+	margin: 10px 0 5px 10px;
+}
+
 #main-photo
 {	
 	margin-top: 1em; 
@@ -38,4 +45,31 @@ nav li a
 	width: 100%;
 	background-image: url("../img/main-photo.jpg");
 	background-size: 100%;
+}
+
+#formContacto
+{
+	margin: 30px auto;
+	height: 320px;
+	width: 920px;
+}
+
+#comentarios
+{
+	max-width: 892px;
+	margin: 10px;
+	height: 222px;
+	width: 892px;
+}
+
+input, #comentarios
+{
+	font-size: 12px;
+	color: black;
+	border: 2px solid gray;
+}
+
+#h1-contacto, #h2-contacto
+{
+	text-align: center;
 }
