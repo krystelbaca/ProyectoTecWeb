@@ -1,0 +1,39 @@
+html, body
+{
+	height: 100%;
+}
+
+nav
+{
+	background-color: black;
+	width: 100%;
+	height: 40px;
+}
+		
+nav li
+{
+	display: inline-block;
+	padding: 10px 7% 0 ;
+}
+
+nav li a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.cuadro
+{
+	background: red;
+	width: 200px;
+	height: 200px;
+}
+
+#main-photo
+{	
+	margin-top: 1em; 
+	height: 500px;
+	width: 100%;
+	background-image: url("../img/main-photo.jpg");
+	background-size: 100%;
+}
