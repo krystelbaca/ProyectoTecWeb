@@ -69,7 +69,30 @@ input, #comentarios
 	border: 2px solid gray;
 }
 
-#h1-contacto, #h2-contacto
+#h1-contacto, #h2-contacto, #h1-network
 {
 	text-align: center;
+	margin: auto;
+}
+
+#wrapper
+{
+	margin: 100px auto;
+}
+
+.icon
+{
+	height: 100px;
+	width: 100px;
+	margin: 100px auto;
+}
+
+#facebook
+{
+	margin-left: 15%;
+}
+
+#instagram
+{
+	margin-left: 35%;
 }
