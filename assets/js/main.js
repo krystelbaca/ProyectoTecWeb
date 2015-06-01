@@ -1,7 +1,13 @@
 $(document).ready(function()
 {
-
-		$('.navItem').animo('blur', {duration: .2, amount: .9});
+		$('li a').mouseenter(function()
+		{
+				$(this).animo('blur', {duration: 0, amount: .9});
+				$(this).mouseleave(function()
+				{
+					$(this).animo('focus');
+    			});				
+		});
 
 		setInterval(function interval() 
 		{
