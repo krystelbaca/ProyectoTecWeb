@@ -99,7 +99,7 @@ input, #comentarios
 
 #network-ribbon
 {
-	width: 100%;
+
 	background-color: black;
 }
 
@@ -110,5 +110,10 @@ input, #comentarios
 
 .image
 {
-	height: 100%;
+	margin: 20px 0;
+}
+
+#contact-recently
+{
+	margin-top: 20px;
 }

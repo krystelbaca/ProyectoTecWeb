@@ -36,4 +36,21 @@ $(document).ready(function()
 		    });
 		});
 
+
+    $.getJSON("https://api.flickr.com/services/rest/?method=flickr.cameras.getBrandModels&api_key=ad02826634f8ae00dc4c9cc24f45a291&brand=nikon&format=json&jsoncallback=?",
+      function(result) {
+        $.each(result, function(index, data) {
+          $(data.camera).each(function(index) {
+            var div = $("#contact-recently").append("<div id='camera-" + index + "' class='camera'><p>" +
+              this.id + "</p><hr/></div>");
+            if (this.images) {
+              div.find("#camera-" + index).prepend("<img src='" + this.images.small._content + "' />")
+            } else {
+              div.find("#camera-" + index).prepend("<img src='assets/images/icons/no-image-small.png' />")
+            }
+            if ( index == 4 ) return false;
+	          });
+	        });
+		});
+
 });
