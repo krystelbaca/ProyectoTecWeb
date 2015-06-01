@@ -27,7 +27,7 @@ $(document).ready(function()
     	});
 
 
-		var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ad02826634f8ae00dc4c9cc24f45a291&tags=sunset&per_page=10";
+		var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ad02826634f8ae00dc4c9cc24f45a291&tags=moon&per_page=10";
 		var src;
 		$.getJSON(url + "&format=json&jsoncallback=?", function(data){
 		    $.each(data.photos.photo, function(i,item){
