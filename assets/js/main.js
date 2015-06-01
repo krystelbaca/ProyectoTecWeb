@@ -53,4 +53,16 @@ $(document).ready(function()
 	        });
 		});
 
+    $("#cargar").click(function() {
+        $.getJSON("https://api.flickr.com/services/rest/?method=flickr.tags.getHotList&api_key=ad02826634f8ae00dc4c9cc24f45a291&format=json&jsoncallback=?",
+        	function(result) {
+        $.each(result, function(index, data) {
+          $(data.tag).each(function(index) {
+            var div = $("#hot-topics").append("<div id='tag-" + index + "' class='tag'><p> score: " +
+              this.score + "</p><p> tag: #" +this._content + "</p><hr/></div>");
+            if ( index == 4 ) return false;
+	          });
+	        });
+        });
+    });
 });
