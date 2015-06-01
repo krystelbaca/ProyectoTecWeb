@@ -38,12 +38,12 @@ nav li a
 	margin: 10px 0 5px 10px;
 }
 
-#main-photo
+#portada
 {	
 	margin-top: 1em; 
-	height: 620px;
+	background-image: url(../images/carrusel/fotoportada.jpg);
+	height: 600px;
 	width: 100%;
-	background-image: url("../img/main-photo.jpg");
 	background-size: 100%;
 }
 
