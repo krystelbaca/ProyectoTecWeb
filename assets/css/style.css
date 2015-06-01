@@ -99,10 +99,16 @@ input, #comentarios
 
 #network-ribbon
 {
-	height: 100%;
+	width: 100%;
+	background-color: black;
 }
 
 .navItem
 {
 	font-weight: bold;
+}
+
+.image
+{
+	height: 100%;
 }
