@@ -41,8 +41,7 @@ nav li a
 #portada
 {	
 	margin-top: 1em; 
-	background-image: url(../images/carrusel/fotoportada.jpg);
-	height: 600px;
+	height: 800px;
 	width: 100%;
 	background-size: 100%;
 }
@@ -76,7 +75,7 @@ input, #comentarios
 }
 
 #wrapper
-{
+{	
 	margin: 100px auto 0;
 }
 
