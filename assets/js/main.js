@@ -53,4 +53,14 @@ $(document).ready(function()
 	        });
 		});
 
+    var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=4bdf263bfc9285f78451e340c2a0f765&user_id=133697780@N04";
+		var src;
+		$.getJSON(url + "&format=json&jsoncallback=?", function(data){
+		    $.each(data.photos.photo, function(i,item){
+		        src = "http://farm"+ item.farm +".static.flickr.com/"+ item.server +"/"+ item.id +"_"+ item.secret +"_b.jpg";
+		        $("<img/>").attr("src", src).appendTo("#wrapper");
+		        if ( i == 3 ) return false;
+		    });
+		});
+
 });
