@@ -116,3 +116,8 @@ input, #comentarios
 {
 	margin-top: 20px;
 }
+
+#galeria {
+	width: 800px;
+	margin: 50px 50px 50px 50px;
+}
