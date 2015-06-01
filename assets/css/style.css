@@ -121,5 +121,20 @@ input, #comentarios
 #galeria {
 	width: 800px;
 	margin: 50px 50px 50px 50px;
+<<<<<<< HEAD
 
+=======
+	width: 800px
+}
+
+#mi
+{
+	width:600px;
+	margin: auto;
+}
+
+#perfil
+{
+margin: 60px 0 60px 170px;
+>>>>>>> origin/master
 }
