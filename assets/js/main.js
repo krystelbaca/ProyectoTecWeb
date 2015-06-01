@@ -26,16 +26,15 @@ $(document).ready(function()
 			$(this).addClass('animacion');
     	});
 
-    	$.getJSON("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ad02826634f8ae00dc4c9cc24f45a291&tags=cats&per_page=10",
-    		function(result) 
-    		{
-        	$.each(result, function(index, data) 
-        		{
-          		$(data.track).each(function(index) 
-          			{
-		            var div = $("#wrapper").append("<div id='image-" + index + "' class='image'><p>" +
-		            this.name + "</p>");
-        			});
-      			});
-      		});
+
+		var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ad02826634f8ae00dc4c9cc24f45a291&tags=sunset&per_page=10";
+		var src;
+		$.getJSON(url + "&format=json&jsoncallback=?", function(data){
+		    $.each(data.photos.photo, function(i,item){
+		        src = "http://farm"+ item.farm +".static.flickr.com/"+ item.server +"/"+ item.id +"_"+ item.secret +"_m.jpg";
+		        $("<img/>").attr("src", src).appendTo("#network-ribbon");
+		        if ( i == 3 ) return false;
+		    });
+		});
+    	
 });
