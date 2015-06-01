@@ -77,7 +77,7 @@ input, #comentarios
 
 #wrapper
 {
-	margin: 100px auto;
+	margin: 100px auto 0;
 }
 
 .icon
@@ -95,4 +95,14 @@ input, #comentarios
 #instagram
 {
 	margin-left: 35%;
+}
+
+#network-ribbon
+{
+	height: 100%;
+}
+
+.navItem
+{
+	font-weight: bold;
 }
