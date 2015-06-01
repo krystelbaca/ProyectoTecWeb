@@ -1,7 +1,7 @@
 html, body
 {
 	height: 100%;
-	font-family: ubuntu;
+	font-family: 'Ubuntu';
 	font-variant: small-caps;
 }
 
@@ -115,4 +115,10 @@ input, #comentarios
 #contact-recently
 {
 	margin-top: 20px;
+}
+
+#galeria{
+
+	margin: 50px 50px 50px 50px;
+	width: 800px
 }
