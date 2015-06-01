@@ -1,7 +1,7 @@
 html, body
 {
 	height: 100%;
-	font-family: ubuntu;
+	font-family: 'Ubuntu';
 	font-variant: small-caps;
 }
 
@@ -117,7 +117,9 @@ input, #comentarios
 	margin-top: 20px;
 }
 
+
 #galeria {
 	width: 800px;
 	margin: 50px 50px 50px 50px;
+
 }
